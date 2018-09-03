@@ -1,0 +1,21 @@
+<app-root></app-root>
+<div style="background-color:black">
+<ul *ngFor="let d of fullData"  >
+  <div *ngIf="d.Response=='True'">
+      <div class="card" style="width: 18rem;">
+          <img src={{d.Poster}} class="card-img-top" alt="No Poster Found"  >
+          <div class="card-body">
+            <h5 class="card-title"> <b>{{d.Title}}</b></h5>
+            <p class="card-text"> <b>Year</b>= {{d.Year}} <br> <b>Released</b>= {{d.Released}}</p>
+            <p class="card-text"> <b> Runtime</b>= {{d.Runtime}} <br> <b> Genre</b> ={{d.Genre}}</p>
+            <p class="card-text">  <b> Director</b>= {{d.Director}}  <br> <b> Writer</b>= {{d.Writer}}</p>
+            <p class="card-text">   <b> Actors</b> = {{d.Actors}}    </p>
+
+          </div>
+        </div>
+  </div>
+  <div *ngIf="d.Response=='False'">
+<h1>{{d.Error}}</h1>
+  </div>
+</ul>
+</div>

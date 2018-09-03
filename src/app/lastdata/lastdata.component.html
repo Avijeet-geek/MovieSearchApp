@@ -1,0 +1,19 @@
+<div class="container-fluid" style="background-color:black">
+    <div class="alert " style=" color:chocolate; text-align: center"><b> Past 5 recent Searches</b></div>
+ 
+    <div  *ngFor="let item of toDoListArray">
+      <div class="row">
+        <div class="col-sm-8">
+            <div style="color:white;font-size:20px"><b>Movie Name&nbsp;&nbsp;&nbsp;</b>{{item.source}}</div>
+        </div>
+        <div class="col-sm-4">
+            <a (click)="search()"class="btn btn-warning" routerLink="/full/{{item.information}}/{{item.source}}">Full Description&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+
+        </div>
+      </div>
+      <hr style="background-color: aliceblue">
+<br>
+    </div>    
+      
+</div>
+
