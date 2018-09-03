@@ -20,7 +20,7 @@ export class MainComponent implements OnInit {
   itemValue = '';
   items: Observable<any[]>;
   constructor(public storage: LocalStorage, public db: AngularFireDatabase) {
-    this.items = db.list('mvies').valueChanges();
+    this.items = db.list('mvies').valueChanges();  
    }
 
   ngOnInit() {
