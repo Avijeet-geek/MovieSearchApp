@@ -8,10 +8,10 @@ import { LocalStorage } from '@ngx-pwa/local-storage';
   styleUrls: ['./fulldetail.component.css']
 }) 
 export class FulldetailComponent implements OnInit {
-  datas: Object;
-  dataId:Object; 
-  dataInfo:Object;
-  fullData:object; 
+  datas: any;
+  dataId:any; 
+  dataInfo:any;
+  fullData:any; 
   arr:Object;
   constructor(private route: ActivatedRoute,public globalservice:GlobalService,public storage: LocalStorage) { 
     this.route.params.subscribe( params => this.datas = params );
