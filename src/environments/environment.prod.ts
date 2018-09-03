@@ -6,6 +6,6 @@ export const environment = {
    databaseURL: 'https://datas-98caa.firebaseio.com',
    projectId: 'datas-98caa',
    storageBucket: 'datas-98caa.appspot.com',
-   messagingSenderId: '278415361737' 
+   messagingSenderId: '278415361737'
  }
 };

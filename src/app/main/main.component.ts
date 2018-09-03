@@ -22,9 +22,9 @@ export class MainComponent implements OnInit {
   constructor(public storage: LocalStorage, public db: AngularFireDatabase) {
     this.items = db.list('mvies').valueChanges();  
    }
-
+ 
   ngOnInit() {
-  }
+  } 
   search() {
   this.db.list('/mvies').push({ source: this.src, information: this.srcby });
   this.src = '';

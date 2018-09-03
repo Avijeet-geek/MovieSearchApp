@@ -26,7 +26,7 @@ export class LastdataComponent implements OnInit {
   getToDoList() {
     this.toDoList = this.firebasedb.list('mvies');
     return this.toDoList;
-}
+}   
   ngOnInit() {
 
 this.getToDoList().snapshotChanges()
