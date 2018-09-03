@@ -22,7 +22,6 @@ export class LastdataComponent implements OnInit {
    datas: Object;
    fullData:Object;
   constructor(private route: ActivatedRoute,private firebasedb: AngularFireDatabase,public globalservice:GlobalService) { 
-   
   }
   getToDoList() {
     this.toDoList = this.firebasedb.list('mvies');
